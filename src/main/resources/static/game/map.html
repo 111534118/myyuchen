@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak 遊戲攻略 - 互動地圖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Peak 攻略站</a>
+            <ul class="nav-links">
+                <li><a href="index.html">主線攻略</a></li>
+                <li><a href="map.html">互動地圖</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>互動地圖：寧靜森林</h1>
+        <p>點擊地圖上的圖標，查看地點資訊。</p>
+        
+        <div id="map-container">
+            <img src="images/map.jpg" alt="寧靜森林地圖" id="map-image">
+            <!-- Markers will be positioned by CSS -->
+            <div class="map-marker" data-marker-id="1" style="left: 25%; top: 40%;"></div>
+            <div class="map-marker" data-marker-id="2" style="left: 60%; top: 65%;"></div>
+            <div class="map-marker" data-marker-id="3" style="left: 75%; top: 20%;"></div>
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">地點資訊</h2>
+            <p id="modal-text">這裡是地點的詳細說明。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Peak 攻略原型 v0.1</p>
+    </footer>
+
+    <script src="map.js"></script>
+</body>
+</html>
