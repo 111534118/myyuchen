@@ -1,8 +1,7 @@
-# site-navigation Specification
+# spec: site-navigation
 
-## Purpose
-TBD - created by archiving change formalize-existing-prototype. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
+
 ### Requirement: 一致性的頁面導覽
 
 應用程式的所有主要頁面都 MUST (必須) 提供一個導覽列。導覽列應包含「遊戲資訊」、「主線攻略」和「互動地圖」三個連結。
@@ -18,4 +17,3 @@ TBD - created by archiving change formalize-existing-prototype. Update Purpose a
 **Given** 使用者正在「主線攻略」頁面 (`main-quest.html`)。
 **When** 使用者點擊導覽列中的「互動地圖」連結。
 **Then** 應用程式將顯示「互動地圖」頁面 (`map.html`)。
-
