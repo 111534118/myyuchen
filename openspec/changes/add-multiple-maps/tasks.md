@@ -1,0 +1,22 @@
+- [ ] **Scaffold new map pages:**
+    - [ ] Create `src/main/resources/static/game/map-shore.html` by copying `map.html`.
+    - [ ] Create `src/main/resources/static/game/map-tropics.html` by copying `map.html`.
+- [ ] **Update new map pages with assets:**
+    - [ ] In `map-shore.html`, update the map image to `images/海岸.png`.
+    - [ ] In `map-tropics.html`, update the map image to `images/熱帶.png`.
+    - [ ] Add 2-3 placeholder `map-marker` divs to each new HTML file with placeholder `data-marker-id`s and `style` attributes.
+- [ ] **Adapt map logic:**
+    - [ ] Create `src/main/resources/static/game/map-shore.js` by copying `map.js`.
+    - [ ] Create `src/main/resources/static/game/map-tropics.js` by copying `map.js`.
+    - [ ] In `map-shore.js`, update `markerData` with placeholder titles/texts for Shore map markers.
+    - [ ] In `map-tropics.js`, update `markerData` with placeholder titles/texts for Tropics map markers.
+    - [ ] Link `map-shore.js` and `map-tropics.js` in their respective HTML files.
+- [ ] **Implement map navigation:**
+    - [ ] Modify `src/main/resources/static/game/index.html` (and `map.html`, `main-quest.html` if necessary for consistency) to add a dropdown menu under the "互動地圖" link in the `nav-links`.
+    - [ ] The dropdown should contain links to `map.html` (original map), `map-shore.html`, and `map-tropics.html`.
+    - [ ] Update `src/main/resources/static/game/style.css` to style the new dropdown menu.
+- [ ] **Verify functionality:**
+    - [ ] Start the web server.
+    - [ ] Navigate to the main page and confirm the new dropdown menu appears.
+    - [ ] Click on each map link and verify the correct map image loads.
+    - [ ] Verify that clicking placeholder markers opens the modal with placeholder text.

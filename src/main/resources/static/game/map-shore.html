@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peak 遊戲攻略 - 互動地圖</title>
+    <title>Peak 遊戲攻略 - 互動地圖 - 海岸</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +13,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">遊戲資訊</a></li>
                 <li><a href="main-quest.html">主線攻略</a></li>
-                <li class="dropdown">
-                    <a href="map.html" class="dropbtn">互動地圖 <i class="arrow down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="map.html">寧靜森林 (原)</a>
-                        <a href="map-shore.html">海岸</a>
-                        <a href="map-tropics.html">熱帶雨林</a>
-                    </div>
-                </li>
+                <li><a href="map.html">互動地圖</a></li>
             </ul>
             <form class="search-form">
                 <input type="search" name="query" placeholder="搜尋攻略..." aria-label="搜尋攻略">
@@ -30,11 +23,11 @@
     </header>
 
     <main class="container">
-        <h1>互動地圖：寧靜森林</h1>
+        <h1>互動地圖：海岸</h1>
         <p>點擊地圖上的圖標，查看地點資訊。</p>
         
         <div id="map-container">
-            <img src="images/map.jpg" alt="寧靜森林地圖" id="map-image">
+            <img src="images/海岸.png" alt="海岸地圖" id="map-image">
             <!-- Markers will be positioned by CSS -->
             <div class="map-marker" data-marker-id="1" style="left: 50%; top: 30%;"></div>
             <div class="map-marker" data-marker-id="2" style="left: 40%; top: 45%;"></div>
@@ -56,13 +49,13 @@
             <h2 id="modal-title">地點資訊</h2>
             <p id="modal-text">這裡是地點的詳細說明。</p>
         </div>
-    </div>
+    </main>
 
     <footer>
         <p>Peak 攻略原型 v0.1</p>
     </footer>
 
     <script src="search.js"></script>
-    <script src="map.js"></script>
+    <script src="map-shore.js"></script>
 </body>
 </html>

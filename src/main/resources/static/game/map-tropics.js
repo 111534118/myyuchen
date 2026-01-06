@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Hardcoded data for map markers, as required by SD.md
     const markerData = {
-        '1': { title: '寧靜森林 標記 1', text: '這是標記 1 的描述。' },
-        '2': { title: '寧靜森林 標記 2', text: '這是標記 2 的描述。' },
-        '3': { title: '寧靜森林 標記 3', text: '這是標記 3 的描述。' },
-        '4': { title: '寧靜森林 標記 4', text: '這是標記 4 的描述。' },
-        '5': { title: '寧靜森林 標記 5', text: '這是標記 5 的描述。' },
-        '6': { title: '寧靜森林 標記 6', text: '這是標記 6 的描述。' },
-        '7': { title: '寧靜森林 標記 7', text: '這是標記 7 的描述。' },
-        '8': { title: '寧靜森林 標記 8', text: '這是標記 8 的描述。' },
-        '9': { title: '寧靜森林 標記 9', text: '這是標記 9 的描述。' },
-        '10': { title: '寧靜森林 標記 10', text: '這是標記 10 的描述。' }
+        '1': { title: '熱帶雨林 標記 1', text: '這是標記 1 的描述。' },
+        '2': { title: '熱帶雨林 標記 2', text: '這是標記 2 的描述。' },
+        '3': { title: '熱帶雨林 標記 3', text: '這是標記 3 的描述。' },
+        '4': { title: '熱帶雨林 標記 4', text: '這是標記 4 的描述。' },
+        '5': { title: '熱帶雨林 標記 5', text: '這是標記 5 的描述。' },
+        '6': { title: '熱帶雨林 標記 6', text: '這是標記 6 的描述。' },
+        '7': { title: '熱帶雨林 標記 7', text: '這是標記 7 的描述。' },
+        '8': { title: '熱帶雨林 標記 8', text: '這是標記 8 的描述。' },
+        '9': { title: '熱帶雨林 標記 9', text: '這是標記 9 的描述。' },
+        '10': { title: '熱帶雨林 標記 10', text: '這是標記 10 的描述。' }
     };
 
     const modal = document.getElementById('info-modal');
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.querySelector('.close-button');
     const markers = document.querySelectorAll('.map-marker');
 
-    // Function to show the modal with specific content
     function showModal(markerId) {
         const data = markerData[markerId];
         if (data) {
@@ -29,33 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to hide the modal
     function hideModal() {
         modal.style.display = 'none';
     }
 
-    // Add click event listener to each marker
     markers.forEach(marker => {
         marker.addEventListener('click', (event) => {
-            // Stop the click from bubbling up to parent elements
             event.stopPropagation(); 
-            
             const markerId = marker.getAttribute('data-marker-id');
             showModal(markerId);
         });
     });
 
-    // Add click event listener to the close button
     closeButton.addEventListener('click', hideModal);
 
-    // Add click event listener to the modal background to close it
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
             hideModal();
         }
     });
 
-    // Optional: Close the modal with the 'Escape' key
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && modal.style.display === 'flex') {
             hideModal();
