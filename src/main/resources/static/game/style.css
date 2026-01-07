@@ -212,11 +212,16 @@ footer {
     color: #ecf0f1;
 }
 
+/* New Search Container for positioning */
+.search-container {
+    position: relative;
+    margin-left: 20px; /* Space from navigation links */
+}
+
 /* Search Form Styles */
 .search-form {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Space from navigation links */
 }
 
 .search-form input[type="search"] {
@@ -309,7 +314,84 @@ mark {
     transition: transform 0.3s ease;
 }
 
+
+
 .dropdown:hover .dropbtn .arrow {
+
     transform: rotate(-135deg); /* Arrow up on hover */
+
     -webkit-transform: rotate(-135deg);
+
+}
+
+
+
+/* Search Suggestions Styles */
+#search-suggestions {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: calc(100% + 5px); /* Position below the form with a small gap */
+    left: 0;
+    width: 100%; /* Make width relative to the new search-container */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 101; /* Above navbar content */
+}
+
+
+
+.suggestion-item {
+
+    display: block;
+
+    padding: 10px 15px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #f0f0f0;
+
+}
+
+
+
+.suggestion-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+
+.suggestion-item:hover {
+
+    background-color: #f2f2f2;
+
+}
+
+
+
+.suggestion-item.no-results {
+
+    color: #888;
+
+    font-style: italic;
+
+    cursor: default;
+
+}
+
+
+
+.suggestion-item:hover.no-results {
+
+    background-color: #ffffff;
+
 }

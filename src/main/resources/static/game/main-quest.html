@@ -22,16 +22,19 @@
                     </div>
                 </li>
             </ul>
-            <form class="search-form">
-                <input type="search" name="query" placeholder="搜尋攻略..." aria-label="搜尋攻略">
-                <button type="submit">搜尋</button>
-            </form>
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="search" name="query" placeholder="搜尋攻略..." aria-label="搜尋攻略">
+                    <button type="submit">搜尋</button>
+                </form>
+                <div id="search-suggestions"></div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
         <!-- 第一個圖文區塊 -->
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-1">
             <img src="images/1.jpg"  class="guide-image">
             <p>
                 護照：進入遊戲第一個持有道具，開啟自訂自身顯示外觀
@@ -39,7 +42,7 @@
         </div>
 
         <!-- 第二個圖文區塊 -->
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-2">
             <img src="images/2.jpg"  class="guide-image">
             <p>
                 表情 R：按R鼠標移動選擇，注意下方昏倒表情腳色會軟腳看地形慎用
@@ -47,35 +50,35 @@
         </div>
 
         <!-- 第三個圖文區塊 -->
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-3">
             <img src="images/3.jpg" class="guide-image">
             <p>
                 起始點：有背包、指南針、信號棒、油燈、號角(可解成就)、Bing Bong兵幫(可解成就)
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-4">
             <img src="images/4.jpg" class="guide-image">
             <p>
                 背包：想要自己直接存取背包，需要下載MOD按鍵開啟
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-5">
             <img src="images/5.jpg" class="guide-image">
             <p>
                 營火(篝火)：全部存活玩家在周圍才可開啟，治療玩家一些效果
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-6">
             <img src="images/6.jpg" class="guide-image">
             <p>
                 古代雕像：可復活隊友或隨機一件神話道具(無復活情況才有道具)
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-7">
             <img src="images/7.jpg" class="guide-image">
             <p>
                 日夜循環：五分鐘一次循環
@@ -83,35 +86,35 @@
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-8">
             <img src="images/8.jpg" class="guide-image">
             <p>
                 海蜇：接觸會中毒+滑倒
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-9">
             <img src="images/9.jpg" class="guide-image">
             <p>
                 毒海膽：接觸會中毒
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-10">
             <img src="images/10.jpg" class="guide-image">
             <p>
                 尖刺莖：接觸會中毒
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-11">
             <img src="images/11.jpg" class="guide-image">
             <p>
                 木橋：建議一次一人使用(兩人以上會斷)
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-12">
             <img src="images/12.jpg" class="guide-image">
             <p>
                 爆炸的灌木：接觸沒附加傷害，爆炸會彈飛角色
@@ -119,7 +122,7 @@
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-13">
             <img src="images/13.jpg" class="guide-image">
             <p>
                 有毒的灌木：接觸爆毒霧氣，停留一小段時間才消散
@@ -127,7 +130,7 @@
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-14">
             <img src="images/14.jpg" class="guide-image">
             <p>
                 吸血蟲：吸血前小小不易察覺，吸血後角色會一直中毒
@@ -135,35 +138,35 @@
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-15">
             <img src="images/15.jpg" class="guide-image">
             <p>
                 蜂巢：角色靠近蜜蜂攻擊有毒性
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-16">
             <img src="images/16.jpg" class="guide-image">
             <p>
                 噴氣孔：沒事別站在上面 會被噴飛跟燒傷
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-17">
             <img src="images/17.jpg" class="guide-image">
             <p>
                 閃光印記：接觸後閃光霧氣 蒙蔽視線
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-18">
             <img src="images/18.jpg" class="guide-image">
             <p>
                 冰岩石：接觸角色會有冰凍傷害
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-19">
             <img src="images/19.jpg" class="guide-image">
             <p>
                 暴風雪：有冰凍傷害避開迎風面
@@ -171,87 +174,87 @@
             </p>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-20">
             <img src="images/20.jpg" class="guide-image">
             <p>
                 熔岩流：玩家接觸有傷害+燙傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-21">
             <img src="images/21.jpg" class="guide-image">
             <p>
                 噴岩漿：玩家接觸會燒傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-22">
             <img src="images/22.jpg" class="guide-image">
             <p>
                 熔岩：玩家接觸會燒傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-23">
             <img src="images/23.jpg" class="guide-image">
             <p>
                 熔岩漿：接觸後會燒傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-24">
             <img src="images/24.jpg" class="guide-image">
             <p>
                 各種行李箱：開啟各種食物或道具
                 *有鐵鍊這種會受傷 但獲取相對高級品
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-25">
             <img src="images/25.jpg" class="guide-image">
             <p>
                 筆記：童子軍隊長的共有8張筆記，解成就物品。
                 [烤過再打開+能量10]
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-26">
             <img src="images/26.PNG" class="guide-image">
             <p>
                 信號棒：最適合迷失的玩家
                 可產生明亮的光線，用於霧氣辨識和標記。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-27">
             <img src="images/27.jpg" class="guide-image">
             <p>
                 燈籠(油燈)：
                 有助於照明，並防止玩家在一定半徑內被凍結。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-28">
             <img src="images/28.jpg" class="guide-image">
             <p>
                 冰棒或兵幫（毛絨玩具）：
                 它是一個成就收集品，沒有遊戲效果。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-29">
             <img src="images/29.PNG" class="guide-image">
             <p>
                 指南針：
                 幫助顯示基本方向（北N）。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-30">
             <img src="images/30.PNG" class="guide-image">
             <p>
                 海盜羅盤（傳奇）：
                 用於指向最近的未開封的行李箱。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-31">
             <img src="images/31.PNG" class="guide-image">
             <p>
                 軍號（樂器）：
                 它可以透過水豚解鎖成就和動物小夜曲徽章。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-32">
             <img src="images/32.PNG" class="guide-image">
             <p>
                 童子軍軍號（樂器）：(可解成就)
@@ -261,70 +264,70 @@
                 附加 能量+100
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-33">
             <img src="images/33.PNG" class="guide-image">
             <p>
                 友誼軍號（傳奇）：
                 它為全隊提供無限體力，持續 10 秒。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-34">
             <img src="images/34.PNG" class="guide-image">
             <p>
                 吹氣筒：一次性
                 造成完全昏睡，治療所有負面狀態 受傷也可以
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-35">
             <img src="images/35.PNG" class="guide-image">
             <p>
                 詛咒骷髏（傳奇）：
                 犧牲使用者來復活附近的隊友，清除他們的狀態效果，並補充全部體力。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-36">
             <img src="images/36.PNG" class="guide-image">
             <p>
                 繩索捲軸：總長12.5公尺 一次放置最長10公尺
                 向下展開12.5公尺繩索。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-37">
             <img src="images/37.jpg" class="guide-image">
             <p>
                 反繩索捲軸：總長12.5公尺 一次放置最長10公尺
                 向上展開12.5公尺繩索。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-38">
             <img src="images/38.jpg" class="guide-image">
             <p>
                 繩索炮：
                 向上發射繩索，形成垂直攀爬繩索。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-39">
             <img src="images/39.jpg" class="guide-image">
             <p>
                 反向繩索炮：
                 向下發射繩索，形成往上繩索。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-40">
             <img src="images/40.jpg" class="guide-image">
             <p>
                 鐵鍊式炮：
                 可製造水平繩索，用於橫向移動。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-41">
             <img src="images/41.jpg" class="guide-image">
             <p>
                 岩釘(鉤索錨點)：放在1 2 3 快捷格中，攀爬時滑鼠右鍵放置，E抓取使用
                 壁掛式體力恢復點，會隨著使用次數增加而減少。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-42">
             <img src="images/42.jpg" class="guide-image">
             <p>
                 童軍雕像：
@@ -332,69 +335,69 @@
                 [釋放位置是玩家復活位置，外框可放為藍色不可為紅色]
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-43">
             <img src="images/43.jpg" class="guide-image">
             <p>
                 解毒劑：
                 可治癒少量毒單位 大約三四次
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-44">
             <img src="images/44.jpg" class="guide-image">
             <p>
                 治癒真菌：只有治療受傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-45">
             <img src="images/45.jpg" class="guide-image">
             <p>
                 醫療包：治療完全單位 恢復少毒性
                 玩家可以使用它來完全恢復生命值。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-46">
             <img src="images/46.jpg" class="guide-image">
             <p>
                 繃帶：
                 可持續治癒少量傷害單位。(實際用起來沒有很多)
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-47">
             <img src="images/47.jpg" class="guide-image">
             <p>
                 萬能藥：治療+消除全部負面效果[飢餓也行]{算天然食物 成就}
                 可消除所有狀態效果並補充滿體力。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-47">
             <img src="images/47.jpg" class="guide-image">
             <p>
                 仙靈提燈（傳奇）：治療+火傷+中毒+昏睡+凍傷[消除負面效果]
                 可在有限時間內緩慢治癒半徑範圍內的玩家。無法充電
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-48">
             <img src="images/48.jpg" class="guide-image">
             <p>
                 熱敷袋(暖暖包)：一次性時效為一分鐘
                 用於去除凍傷霜凍，但不會阻止未來再次凍傷。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-49">
             <img src="images/49.jpg" class="guide-image">
             <p>
                 便攜式爐灶：
                 玩家可以透過它烹飪食物並解凍冰凍的玩家，但一旦放置在某個位置，時間過後會熄滅(應該跟篝火差不多)。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-50">
             <img src="images/50.jpg" class="guide-image">
             <p>
                 潘朵拉的午餐盒：高機率負面效果{算天然食物 成就}
                 每次使用可獲得三個隨機效果，可能是詛咒或毒藥。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-51">
             <img src="images/51.jpg" class="guide-image">
             <p>
                 架空蘑菇(膨化真菌)：
@@ -402,193 +405,193 @@
                 可投擲的蘑菇，可生成臨時平台。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-52">
             <img src="images/52.jpg" class="guide-image">
             <p>
                 香蕉皮：
                 對任何正在行走的玩家造成滑倒和輕微墜落傷害，包括投擲者。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-53">
             <img src="images/53.jpg" class="guide-image">
             <p>
                 混合堅果
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-54">
             <img src="images/54.PNG" class="guide-image">
             <p>
                 格蘭諾拉麥片棒
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-55">
             <img src="images/55.jpg" class="guide-image">
             <p>
                 童子軍餅乾 可食用至少3次
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-56">
             <img src="images/56.jpg" class="guide-image">
             <p>
                 運動飲料 不能減少飢餓 可治療燒傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-57">
             <img src="images/57.jpg" class="guide-image">
             <p>
                 能量飲料 11秒加速攀爬 隨後昏睡
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-58">
             <img src="images/58.jpg" class="guide-image">
             <p>
                 大棒棒糖 提供11秒的無限體力 隨後會嚴重嗜睡。
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-59">
             <img src="images/59.jpg" class="guide-image">
             <p>
                 航空食品 高級食品 高抗飢餓+高能量
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-60">
             <img src="images/60.PNG" class="guide-image">
             <p>
                 *綠果有毒*
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-61">
             <img src="images/61.jpg" class="guide-image">
             <p>
                 椰子 可治療燒傷? Q鍵集氣摔開一半才可食用
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-62">
             <img src="images/62.jpg" class="guide-image">
             <p>
                 棉花糖 目前烹飪1~2次效果一樣  3次焦化 4次碳化
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-63">
             <img src="images/63.jpg" class="guide-image">
             <p>
                 藥用人參 可治療受傷 解毒效果好
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-64">
             <img src="images/64.PNG" class="guide-image">
             <p>
                 辣椒 雪山關卡應該能減暖凍傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-65">
             <img src="images/65.PNG" class="guide-image">
             <p>
                 大果實 只有紫色無毒
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-66">
             <img src="images/66.jpg" class="guide-image">
             <p>
                 香蕉 粉色有毒
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-67">
             <img src="images/67.jpg" class="guide-image">
             <p>
                 蜂巢 飢餓 能量 <恢復最大值的一半></恢復最大值的一半>
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-68">
             <img src="images/68.jpg" class="guide-image">
             <p>
                 樹莓 都可以食用 紅色治療受傷
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-69">
             <img src="images/69.jpg" class="guide-image">
             <p>
                 橘子 抗飢餓 燒傷 治療受傷?
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-70">
             <img src="images/70.jpg" class="guide-image">
             <p>
                 野櫻梅 治療所有效果 隨後昏睡 (類似吹箭效果)
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-71">
             <img src="images/71.PNG" class="guide-image">
             <p>
                 蛋 跟椰子一樣 摔開食用
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-72">
             <img src="images/72.jpg" class="guide-image">
             <p>
                 埤蟲 經過有機率草叢會在玩家的腳腳出現 摘下可食用
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-73">
             <img src="images/73.jpg" class="guide-image">
             <p>
                 胖胖蘑菇 只有一種 就是安全
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-74">
             <img src="images/74.jpg" class="guide-image">
             <p>
                 簇狀蘑菇 是否安全看圖
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-75">
             <img src="images/75.jpg" class="guide-image">
             <p>
                 號角蘑菇 是否安全看圖
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-76">
             <img src="images/76.jpg" class="guide-image">
             <p>
                 (鈕扣)按鈕蘑菇 是否安全看圖
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-77">
             <img src="images/新手初始難度.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-78">
             <img src="images/遊戲難度1.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-79">
             <img src="images/遊戲難度2.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-80">
             <img src="images/遊戲難度3.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-81">
             <img src="images/遊戲難度4.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-82">
             <img src="images/遊戲難度5.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-83">
             <img src="images/遊戲難度6.jpg" class="guide-image">
 
         </div>
 
-        <div class="quest-step">
+        <div class="quest-step" id="quest-step-84">
             <img src="images/遊戲難度7.jpg" class="guide-image">
 
         </div>

@@ -22,10 +22,13 @@
                     </div>
                 </li>
             </ul>
-            <form class="search-form">
-                <input type="search" name="query" placeholder="搜尋攻略..." aria-label="搜尋攻略">
-                <button type="submit">搜尋</button>
-            </form>
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="search" name="query" placeholder="搜尋攻略..." aria-label="搜尋攻略">
+                    <button type="submit">搜尋</button>
+                </form>
+                <div id="search-suggestions"></div>
+            </div>
         </nav>
     </header>
 
@@ -33,7 +36,7 @@
         <div class="game-overview">
             <h1>PEAK 遊戲概覽與重點資訊</h1>
 
-            <h2>1. 遊戲基本資訊</h2>
+            <h2 id="game-info">1. 遊戲基本資訊</h2>
             <ul>
                 <li><strong>遊戲名稱</strong>：PEAK</li>
                 <li><strong>類型</strong>：動作、冒險、獨立製作</li>
@@ -45,7 +48,7 @@
                 <li><strong>整體評價</strong>：極度好評 (所有評論總數 143,305 篇)；SteamDB 評分 92.52%</li>
             </ul>
 
-            <h2>2. 核心玩法與遊戲目標</h2>
+            <h2 id="core-gameplay">2. 核心玩法與遊戲目標</h2>
             <p>PEAK 是一款合作登山遊戲，其核心理念是「就連最微小的錯誤都能招致你的死亡」。</p>
             <ul>
                 <li><strong>目標</strong>：玩家發生飛機事故後，必須攀爬神秘小島中心的山峰，並在山頂點燃信號棒以等待救援直升機。</li>
@@ -65,9 +68,9 @@
                 </li>
             </ul>
 
-            <h2>3. 生存機制與狀態效果</h2>
+            <h2 id="survival-mechanics">3. 生存機制與狀態效果</h2>
             <p>玩家必須尋覓可疑的食物來存活，並謹慎處理傷勢。遊戲的一大特色是提供超多可疑食物。</p>
-            <h3>負面狀態</h3>
+            <h3 id="negative-effects">負面狀態</h3>
             <ul>
                 <li><strong>體力 (綠色條)</strong>： 類似於血量，奔跑或攀爬時會消耗，走動或站著不動時會恢復。最大值會受其他效果影響。</li>
                 <li><strong>能量</strong>： 一次性的體力，在攀爬時體力不足便會開始消耗。許多食物及部分道具可以增加能量。</li>
@@ -75,7 +78,7 @@
                 <li><strong>困</strong>： 吃下棒棒糖或能量飲料，當其給予的效果結束後會產生一定程度的困。困會隨時間緩慢下降，但下降速度比中毒稍快。</li>
                 <li><strong>黑血</strong>： 在中繼點的復活雕像復活時會產生，此狀態會疊加且不可消除，直到遊戲結束。</li>
             </ul>
-            <h3>中毒 (Poisoned) 資訊彙整</h3>
+            <h3 id="poison-info">中毒 (Poisoned) 資訊彙整</h3>
             <p>中毒來源廣泛，不僅限於食物：</p>
             <ol>
                 <li><strong>食物來源</strong>： 玩家在吃下<strong>「某幾種食物」</strong>時會導致中毒。</li>
@@ -88,13 +91,13 @@
                 </li>
                 <li><strong>中毒處理</strong>： 中毒狀態不會自己緩慢下降，但可以使用道具直接解除。</li>
             </ol>
-            <h3>環境狀態</h3>
+            <h3 id="environmental-effects">環境狀態</h3>
             <ul>
                 <li><strong>寒冷值</strong>： 在暴風雪中會迅速增加，靠近深藍色的冰附近也會緩慢增加。可透過靠近熱源、吃辣椒或在溫泉中泡澡來抵抗。</li>
                 <li><strong>熱質</strong>： 靠近熱源、吃辣椒，或靠近火山內部的岩石時會持續增加。觸碰到岩漿柱會受傷並增加大量熱質。</li>
             </ul>
 
-            <h2>4. 關卡與環境介紹</h2>
+            <h2 id="level-intro">4. 關卡與環境介紹</h2>
             <p>玩家在攻頂途中需攀過 4 個生態區：</p>
             <ol>
                 <li><strong>沙灘</strong>： 有海膽和水母，碰觸會中毒。</li>
@@ -103,14 +106,14 @@
                 <li><strong>火山</strong>： 共分兩關。第一關需在上下漲的岩漿中通過眾多岩石。第二關在火山內部，需沿著牆壁向上爬，靠近岩石熱質會持續增加。火山中間的休息區會有許多寶箱，可獲得物資。</li>
             </ol>
 
-            <h2>5. 技術規格與評價</h2>
+            <h2 id="tech-specs">5. 技術規格與評價</h2>
             <ul>
                 <li><strong>控制器支援</strong>： 遊戲提供完整控制器支援。</li>
                 <li><strong>Steam Deck 相容性</strong>： 經測試為 Verified (驗證通過)。</li>
                 <li><strong>語言支援爭議</strong>： 遊戲支援 14 種語言。字幕支援欄位列有繁體中文，但 Steam 商店頁面有通知標註<strong>「不支援繁體中文」</strong>，提醒購買前需確認語言支援清單。</li>
                 <li><strong>遊玩人數</strong>： 目前有 37,785 名玩家正在 Steam 上遊玩。歷史最高同時在線人數為 170,759 (於 2025 年 8 月 17 日)。</li>
             </ul>
-            <h3>最低系統配備</h3>
+            <h3 id="system-requirements">最低系統配備</h3>
             <ul>
                 <li><strong>作業系統</strong>：Win 10</li>
                 <li><strong>處理器</strong>：Intel Core i5 @ 2.5 GHz 或同級</li>

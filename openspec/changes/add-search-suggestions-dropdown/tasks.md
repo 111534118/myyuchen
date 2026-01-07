@@ -1,0 +1,11 @@
+- [ ] **FEAT:** Add unique IDs to section headers in `index.html` to allow for direct navigation via URL fragments.
+- [ ] **FEAT:** Add a container element for the search suggestions dropdown in `index.html`.
+- [ ] **FEAT:** In `style.css`, add styles to position and format the search suggestions dropdown, making it appear correctly under the search bar.
+- [ ] **FEAT:** Refactor `search.js` to perform the following:
+    - On page load, scan the document for headers with IDs and build an in-memory search index (e.g., an array of objects with title and href).
+    - Add an `input` event listener to the search field that filters the search index based on the user's query.
+    - Dynamically generate and display a list of suggestion links in the dropdown container.
+    - Implement logic to show/hide the dropdown.
+    - Ensure clicking a suggestion scrolls the page to the corresponding section.
+- [ ] **DOCS:** Update `openspec/specs/site-navigation/spec.md` with the new requirements for the search suggestions feature. (This is done in the proposal stage).
+- [ ] **TEST:** Create a test suite to validate the new search functionality, ensuring the dropdown appears with correct suggestions and navigation works as expected.
